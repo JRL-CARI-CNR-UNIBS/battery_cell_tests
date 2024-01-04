@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="visual_detection_node" pkg="battery_cell_tests" type="visual_detection.py" output="screen"/>
+</launch>

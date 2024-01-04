@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<launch>
+  <include file="$(find battery_cell_tests)/can_pick_and_place/launch/rosdyn_node.launch"/>
+  <arg name="test_type" default="simulation"/>
+
+  <rosparam if="$(eval test_type == 'real')" command="load" file="$(find battery_cell_tests)/can_pick_and_place/config/real_skills_executer_config.yaml" />
+  <rosparam if="$(eval test_type == 'simulation')" command="load" file="$(find battery_cell_tests)/can_pick_and_place/config/simulation_skills_executer_config.yaml" />
+  <rosparam if="$(eval test_type == 'real')" command="load" file="$(find battery_cell_tests)/can_pick_and_place/config/real_skills_learning_config.yaml" />
+  <rosparam if="$(eval test_type == 'simulation')" command="load" file="$(find battery_cell_tests)/can_pick_and_place/config/simulation_skills_learning_config.yaml" />
+  <rosparam command="load" file="$(find battery_cell_tests)/can_pick_and_place/config/skills_arbitrator_config.yaml" />
+  <include file="$(find skills_util)/launch/skills_servers.launch"/>
+</launch>

@@ -1,0 +1,20 @@
+skills_arbitrator:
+  action_types_to_evaluate:
+    pick_and_place:
+      failure: -1000000 
+      duration: -1000 
+      max_force: -1 
+
+  skill_types_to_evaluate:
+    joint_move_to:
+      failure: -1000000 
+      duration: -1000 
+      max_force: -1 
+    cartesian_position:
+      failure: -1000000 
+      duration: -1000 
+      max_force: -1 
+    simple_touch:
+      failure: -1000000 
+      duration: -1000 
+      max_force: -1 

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="load_param" default="true" />
+  <arg name="test_type" default="simulation" />
+  <arg name="task_name" default="can_pick_and_place" />
+  <arg name="tree_name" default="can_pick_and_place_learning" />
+ 
+  <param name="task_name" type="string" value="$(arg task_name)" />
+  <param name="tree_name" type="string" value="$(arg tree_name)" />
+
+  <include if = "$(arg load_param)" file="$(find battery_cell_tests)/$(arg task_name)/launch/load_test_params.launch">
+    <arg name="test_type" default="$(arg test_type)" />
+  </include>
+
+  <node name="run_opt_tests_node" pkg="battery_cell_tests" type="run_opt_tests.py" output="screen"/>
+</launch>

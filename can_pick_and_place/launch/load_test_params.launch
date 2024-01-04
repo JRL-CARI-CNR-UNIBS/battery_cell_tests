@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="test_type" default="simulation"/>
+  <rosparam if="$(eval test_type == 'real')"       command="load" file="$(find battery_cell_tests)/can_pick_and_place/config/params/real_RL_params.yaml" />
+  <rosparam if="$(eval test_type == 'simulation')" command="load" file="$(find battery_cell_tests)/can_pick_and_place/config/params/simulation_RL_params.yaml" />
+  <rosparam if="$(eval test_type == 'real')"       command="load" file="$(find battery_cell_tests)/can_pick_and_place/config/params/real_TF_params.yaml" />
+  <rosparam if="$(eval test_type == 'simulation')" command="load" file="$(find battery_cell_tests)/can_pick_and_place/config/params/simulation_TF_params.yaml" />
+</launch>

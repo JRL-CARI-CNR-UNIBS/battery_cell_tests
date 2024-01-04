@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="load_param" default="true" />
+  <arg name="test_type" default="real" />
+
+  <param name="tree_name" type="string" value="coke_pick_and_place_learning" />
+  <param name="tree_folder_path" type="string" value="can_pick_and_place/config/trees" />
+
+  <include if = "$(arg load_param)" file="$(find battery_cell_tests)/can_pick_and_place/launch/load_test_params.launch">
+    <arg name="test_type" default="$(arg test_type)" />
+  </include>
+
+  <node name="run_opt_tests_node" pkg="battery_cell_tests" type="run_opt_tests.py" output="screen"/>
+</launch>

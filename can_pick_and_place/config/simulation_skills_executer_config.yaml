@@ -1,0 +1,16 @@
+skills_executer:
+  robots:
+    kuka:
+      end_link_frame: "gripper_working_point"
+      sensor_type: "pybullet"
+      sensored_joint: "kuka_sensor_to_gripper_flange"
+      initial_attached_link_name: 'gripper_base'
+      initial_end_effector_touch_links:
+      - 'gripper_left_finger'
+      - 'gripper_right_finger'
+
+  # skill_types:
+  #   watch: # only joint state and force torque publischer are activate
+  #     controller_configuration_name: "watch"
+  #   cart_pos:
+

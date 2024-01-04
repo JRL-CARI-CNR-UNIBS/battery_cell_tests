@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<launch>
+  <include file="$(find battery_cell_tests)/can_pick_and_place/launch/camera_info.launch"/>
+  <include file="$(find battery_cell_tests)/can_pick_and_place/launch/camera_activation.launch"/>
+  <include file="$(find battery_cell_tests)/can_pick_and_place/launch/visual_detection.launch"/>
+  <include file="$(find battery_cell_tests)/can_pick_and_place/launch/can_spawner.launch"/>
+</launch>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="use_moveit" default="true" />
+  <arg name="test_type" default="simulation" />
+  <include file="$(find battery_cell_configurations)/launch/simulation_start.launch">
+    <arg name="use_moveit" default="$(arg use_moveit)" />
+  </include>
+
+  <include file="$(find battery_cell_tests)/can_pick_and_place/launch/load_test_params.launch"/>
+  <include file="$(find battery_cell_tests)/can_pick_and_place/launch/skills_servers.launch">
+    <arg name="test_type" default="$(arg test_type)" />
+  </include>
+
+  <include file="$(find skills_util)/launch/bt_server.launch"/>
+</launch>

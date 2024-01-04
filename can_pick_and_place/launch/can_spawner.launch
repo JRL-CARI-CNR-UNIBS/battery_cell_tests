@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="can_spawner_node" pkg="battery_cell_tests" type="can_spawner.py" output="screen"/>
+</launch>

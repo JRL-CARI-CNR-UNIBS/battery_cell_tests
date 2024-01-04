@@ -1,0 +1,13 @@
+type: ik_solver/RosdynIkSolver
+base_frame: world # base frame of the chain
+flange_frame: kuka_flange # end frame of the chain
+
+tool_frame: gripper_working_point # destination frame of the IK (it should be rigid attached to flange_frame)
+desired_solutions: 32 # number of desired solution
+joint_names:
+- kuka_joint1
+- kuka_joint2
+- kuka_joint3
+- kuka_joint4
+- kuka_joint5
+- kuka_joint6
