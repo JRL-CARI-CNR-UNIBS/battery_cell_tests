@@ -104,6 +104,7 @@ class personal_optimizer:
         restore_state_clnt = rospy.ServiceProxy('/pybullet_restore_state', RestoreState)
 
         for i in range(missing_iterations):
+            print(i + len(data))
             if not self.run_tree():
                 return False
             os.system('rosparam dump ' + self.data_path + '/' + self.data_name + '.yaml /' + self.data_name)

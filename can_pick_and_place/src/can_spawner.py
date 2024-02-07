@@ -62,7 +62,7 @@ def attached_check(c_obj, apply_scene_clnt, scenes, tfl):
                             a_obj.link_name = rospy.get_param('/' + can_name + '/attached_link')
                             a_obj.touch_links = rospy.get_param('/' + can_name + '/touch_links')
                             if not attached:
-                                rospy.logerr('Attach')
+                                rospy.loginfo('Attach')
 #                                scenes[0].world.collision_objects.remove(c_obj)
 #                                c_obj.operation = c_obj.REMOVE
 #                                scenes[0].world.collision_objects.append(c_obj)
@@ -71,7 +71,7 @@ def attached_check(c_obj, apply_scene_clnt, scenes, tfl):
                                 attached = True
                         else:
                             if attached:
-                                rospy.logerr("Deattach")
+                                rospy.loginfo("Deattach")
                                 scenes[0].robot_state.attached_collision_objects.remove(a_obj)
                                 a_obj.object.operation = a_obj.object.REMOVE
                                 scenes[0].robot_state.attached_collision_objects.append(a_obj)
@@ -91,7 +91,7 @@ if __name__ == '__main__':
     rospack = rospkg.RosPack()
     mesh_path = rospack.get_path('battery_cell_description') + '/meshes/can.STL'
 
-    can_name = 'rs_can'
+    can_name = 'can'
 
     mesh = Mesh()
     with pyassimp.load(mesh_path) as mesh_file:

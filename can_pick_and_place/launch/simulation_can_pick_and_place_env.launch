@@ -8,9 +8,9 @@
   </include>
 
   <include file="$(find battery_cell_tests)/can_pick_and_place/launch/load_test_params.launch"/>
-  <include file="$(find battery_cell_tests)/can_pick_and_place/launch/skills_servers.launch">
+  <!-- <include file="$(find battery_cell_tests)/can_pick_and_place/launch/skills_servers.launch">
     <arg name="test_type" default="$(arg test_type)" />
-  </include>
+  </include> -->
 
   <include file="$(find skills_util)/launch/bt_server.launch"/>
 </launch>

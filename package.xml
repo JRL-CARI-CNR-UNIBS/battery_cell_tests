@@ -24,7 +24,7 @@
   <depend>actionlib</depend>
   <depend>roscpp</depend>
   <depend>gazebo_msgs</depend>
-  <depend>pybullet_utils</depend>
+  <depend>pybullet_simulation</depend>
   <depend>tf</depend>
 
   <exec_depend>message_runtime</exec_depend>

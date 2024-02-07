@@ -2,10 +2,9 @@
 <root BTCPP_format="4">
   <BehaviorTree ID="can_place">
     <Sequence name="can_place">
-      <SkillExecutionNode robot="kuka" action_name="can_pick_and_place" skill_name= "move_to_hole"/>
+      <SkillExecutionNode robot="kuka" action_name="can_pick_and_place" skill_name= "move_to_hole_approach"/>
+      <SkillExecutionNode robot="kuka" action_name="can_pick_and_place" skill_name= "move_to_hole_insertion"/>
       <SkillExecutionNode robot="kuka" action_name="can_pick_and_place" skill_name= "insert"/>
-      <SkillExecutionNode robot="kuka" action_name="can_pick_and_place" skill_name= "open_gripper"/>
-      <SkillExecutionNode robot="kuka" action_name="can_pick_and_place" skill_name= "move_to_hole"/>      
     </Sequence>
   </BehaviorTree>
 </root>

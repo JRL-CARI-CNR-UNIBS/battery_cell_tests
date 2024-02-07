@@ -1,0 +1,518 @@
+actions:
+  can_pick_and_place:
+    action_type: pick_and_place
+    duration: 0
+    duration_reward: -8451.000000000022
+    executed: 0
+    fail: 1
+    failure: 0
+    failure_reward: -0.0
+    final_distance: 0
+    final_distance_reward: -115075.42376068224
+    location_name: table_can_hole
+    max_force: 0
+    max_force_reward: -1644.667578691574
+    object_name: can
+    place_tollerance: 0.01
+    skills:
+      close_gripper:
+        contact: false
+        duration: 1.0820000000001073
+        executed: 1
+        fail: 0
+        gripper_type: pybullet
+        max_force: 5.355321887880825
+        movement: close
+        skill_type: pneumatic_schunk_gripper_move
+      insert:
+        contact: false
+        duration: 0.5809999999999036
+        executed: 0
+        final_distance: 0.11507542376068225
+        goal_twist:
+        - 0.0
+        - 0.0
+        - 0.0457
+        - 0.0
+        - 0.0
+        - 0.0
+        goal_twist_frame: gripper_working_point
+        goal_twist_old:
+        - 0.0
+        - 0.0
+        - 0.0457
+        - 0.0
+        - 0.0
+        - 0.0
+        goal_twist_ratio:
+        - 1.0
+        - .inf
+        - 1.0
+        - 1.0
+        - .inf
+        - 1.0
+        - 0.12162162162162163
+        - 0.09210526315789476
+        - 0.07352941176470588
+        - 1.0
+        - .inf
+        - 1.0
+        - 1.0
+        - .inf
+        - 1.0
+        - 1.0
+        - .inf
+        - 1.0
+        goal_twist_test_number:
+        - 3
+        - 107
+        - 1
+        - 5
+        - 105
+        - 3
+        - 37
+        - 38
+        - 34
+        - 3
+        - 107
+        - 1
+        - 3
+        - 107
+        - 0
+        - 4
+        - 105
+        - 4
+        max_force: 85.53443340556802
+        relative_target: true
+        release: 0.06
+        release_condition: 0
+        reward: -10000000.0
+        reward_old: -10000000.0
+        skill_type: simple_touch
+        target_force: 92.10000000000001
+        target_force_old: 92.10000000000001
+        target_force_ratio:
+        - 0.1125
+        - 0.07575757575757576
+        - 0.09722222222222222
+        target_force_test_number:
+        - 40
+        - 33
+        - 36
+        test_number: 110
+      move_to_can_approach:
+        acceleration_scaling: 0.37799999999999995
+        acceleration_scaling_old: 0.37799999999999995
+        acceleration_scaling_ratio:
+        - 0.0641025641025641
+        - 0.03409090909090909
+        - 0.0592105263157895
+        acceleration_scaling_test_number:
+        - 78
+        - 44
+        - 76
+        contact: true
+        duration: 1.509999999999991
+        executed: 0
+        final_distance: 1.1082927083286798
+        max_force: 665.1256786679032
+        planning_time: 0.5
+        relative_orientation:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 1.0
+        relative_position:
+        - -0.0165
+        - -0.0034999999999999988
+        - -0.035
+        relative_position_old:
+        - -0.0165
+        - -0.0034999999999999988
+        - -0.035
+        relative_position_ratio:
+        - 0.06000000000000001
+        - 0.06249999999999998
+        - 0.03488372093023256
+        - 0.04838709677419354
+        - 0.07051282051282051
+        - 0.04310344827586207
+        - 0.08018867924528301
+        - 0.032258064516129024
+        - 0.016666666666666666
+        relative_position_test_number:
+        - 75
+        - 80
+        - 43
+        - 62
+        - 78
+        - 58
+        - 106
+        - 62
+        - 30
+        replan_attempts: 10
+        reward: 0.0
+        reward_old: 0.0
+        skill_type: joint_move_to
+        target_frame: can_approach
+        test_number: 199
+        velocity_scaling: 0.879
+        velocity_scaling_old: 0.879
+        velocity_scaling_ratio:
+        - 0.023255813953488372
+        - 0.041666666666666664
+        - 0.07894736842105265
+        velocity_scaling_test_number:
+        - 43
+        - 60
+        - 95
+      move_to_can_grasp:
+        acceleration_scaling: 0.551
+        acceleration_scaling_old: 0.551
+        acceleration_scaling_ratio:
+        - 0.05147058823529414
+        - 0.060606060606060594
+        - 0.05468750000000003
+        acceleration_scaling_test_number:
+        - 68
+        - 66
+        - 64
+        contact: true
+        duration: 1.155999999999949
+        executed: 0
+        final_distance: 1.1083363230845185
+        max_force: 1644.667578691574
+        planning_time: 0.5
+        relative_orientation:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 1.0
+        relative_position:
+        - 0.012799999999999999
+        - -0.0165
+        - -0.0361
+        relative_position_old:
+        - 0.012799999999999999
+        - -0.0165
+        - -0.0361
+        relative_position_ratio:
+        - 0.019230769230769232
+        - 0.07142857142857142
+        - 0.044776119402985065
+        - 0.06250000000000001
+        - 0.05970149253731343
+        - 0.03488372093023256
+        - 0.07500000000000001
+        - 0.04347826086956521
+        - 0.017241379310344827
+        relative_position_test_number:
+        - 26
+        - 105
+        - 67
+        - 88
+        - 67
+        - 43
+        - 100
+        - 69
+        - 29
+        replan_attempts: 10
+        reward: 0.0
+        reward_old: 0.0
+        skill_type: joint_move_to
+        target_frame: can_grasp
+        test_number: 199
+        velocity_scaling: 0.2639999999999999
+        velocity_scaling_old: 0.2639999999999999
+        velocity_scaling_ratio:
+        - 0.06306306306306311
+        - 0.016666666666666666
+        - 0.061403508771929856
+        velocity_scaling_test_number:
+        - 111
+        - 30
+        - 57
+      move_to_hole_approach:
+        acceleration_scaling: 0.534
+        acceleration_scaling_old: 0.534
+        acceleration_scaling_ratio:
+        - 0.05
+        - 0.11538461538461539
+        - 0.10714285714285714
+        acceleration_scaling_test_number:
+        - 30
+        - 39
+        - 42
+        contact: false
+        duration: 1.7980000000000018
+        executed: 0
+        final_distance: 0.3731882406813229
+        max_force: 546.854232689634
+        planning_time: 0.5
+        relative_orientation:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 1.0
+        relative_position:
+        - -0.0113
+        - 0.0152
+        - -0.020900000000000002
+        relative_position_old:
+        - -0.0113
+        - 0.0152
+        - -0.020900000000000002
+        relative_position_ratio:
+        - 0.07954545454545456
+        - 0.11224489795918367
+        - 0.08333333333333333
+        - 0.03125
+        - 0.11607142857142858
+        - 0.08974358974358974
+        - 0.10714285714285714
+        - 0.09259259259259259
+        - 0.08333333333333336
+        relative_position_test_number:
+        - 44
+        - 49
+        - 18
+        - 16
+        - 56
+        - 39
+        - 42
+        - 27
+        - 42
+        replan_attempts: 10
+        reward: -10000000.0
+        reward_old: -10000000.0
+        skill_type: joint_move_to
+        target_frame: hole_approach
+        test_number: 112
+        velocity_scaling: 0.689
+        velocity_scaling_old: 0.689
+        velocity_scaling_ratio:
+        - 0.06818181818181818
+        - 0.08333333333333336
+        - 0.11702127659574468
+        velocity_scaling_test_number:
+        - 22
+        - 42
+        - 47
+      move_to_hole_insertion:
+        acceleration_scaling: 0.804
+        acceleration_scaling_old: 0.804
+        acceleration_scaling_ratio:
+        - 0.046875
+        - 0.07142857142857142
+        - 0.1511627906976744
+        acceleration_scaling_test_number:
+        - 32
+        - 35
+        - 43
+        contact: false
+        duration: 1.01299999999992
+        executed: 0
+        final_distance: 0.15686617061062094
+        max_force: 453.40822176124715
+        planning_time: 0.5
+        relative_orientation:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 1.0
+        relative_position:
+        - 0.012799999999999999
+        - 0.011900000000000004
+        - 0.002100000000000001
+        relative_position_old:
+        - 0.012799999999999999
+        - 0.011900000000000004
+        - 0.002100000000000001
+        relative_position_ratio:
+        - 0.022727272727272728
+        - 0.125
+        - 0.10227272727272729
+        - 0.08974358974358974
+        - 0.038461538461538464
+        - 0.11206896551724138
+        - 0.08620689655172414
+        - 0.10294117647058826
+        - 0.09574468085106384
+        relative_position_test_number:
+        - 22
+        - 44
+        - 44
+        - 39
+        - 13
+        - 58
+        - 29
+        - 34
+        - 47
+        replan_attempts: 10
+        reward: -10000000.0
+        reward_old: -10000000.0
+        skill_type: joint_move_to
+        target_frame: hole_insertion
+        test_number: 111
+        velocity_scaling: 0.375
+        velocity_scaling_old: 0.375
+        velocity_scaling_ratio:
+        - 0.08139534883720932
+        - 0.125
+        - 0.03333333333333333
+        velocity_scaling_test_number:
+        - 43
+        - 52
+        - 15
+      open_gripper:
+        contact: false
+        duration: 1.0230000000001382
+        executed: 1
+        fail: 0
+        gripper_type: pybullet
+        max_force: 4.544574701672252
+        movement: open
+        skill_type: pneumatic_schunk_gripper_move
+      return:
+        angular_velocity_rad_s: 0.7
+        angular_velocity_rad_s_old: 0.7
+        contact: false
+        duration: 0.2880000000000109
+        executed: 0
+        final_distance: 1.1083078802664068
+        frame: gripper_working_point
+        linear_velocity_m_s: 0.05
+        linear_velocity_m_s_old: 0.05
+        max_force: 46.498527291447566
+        position:
+        - 0
+        - 0
+        - -0.02
+        position_old:
+        - 0.0
+        - 0.0
+        - -0.02
+        quaternion:
+        - 0
+        - 0
+        - 0
+        - 1
+        reward: -10000000.0
+        reward_old: -10000000.0
+        skill_type: cartesian_position
+        test_number: 198
+        to_ignore:
+        - position
+        - linear_velocity_m_s
+        - angular_velocity_rad_s
+    test_number: 200
+    test_number_star: 167
+    total_reward: -125171.09133937383
+    total_reward_old: -103546.65393392724
+  init:
+    action_type: init
+    duration: 229.2169999959999
+    executed: 1
+    max_force: 6837.962646363572
+    skills:
+      close_gripper:
+        gripper_type: pybullet
+        movement: close
+        skill_type: pneumatic_schunk_gripper_move
+      move_to_home:
+        acceleration_scaling: 1
+        relative_orientation:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 1.0
+        relative_position:
+        - 0.0
+        - 0.0
+        - 0.0
+        robot: kuka
+        skill_type: joint_move_to
+        target_frame: home
+        velocity_scaling: 1
+      open_gripper:
+        contact: false
+        duration: 1.087999998999976
+        executed: 1
+        fail: 0
+        gripper_type: pybullet
+        max_force: 7.347957406602899
+        movement: open
+        skill_type: pneumatic_schunk_gripper_move
+  main:
+    action_type: movement
+    skills:
+      move_0:
+        acceleration_scaling: 1
+        relative_orientation:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 1.0
+        relative_position:
+        - 0.0
+        - 0.0
+        - 0.0
+        skill_type: joint_move_to
+        target_frame: vertex_0
+        velocity_scaling: 0.1
+      move_1:
+        acceleration_scaling: 1
+        relative_orientation:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 1.0
+        relative_position:
+        - 0.0
+        - 0.0
+        - 0.0
+        skill_type: joint_move_to
+        target_frame: vertex_1
+        velocity_scaling: 0.2
+      move_3:
+        acceleration_scaling: 1
+        relative_orientation:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 1.0
+        relative_position:
+        - 0.0
+        - 0.0
+        - 0.0
+        skill_type: joint_move_to
+        target_frame: vertex_3
+        velocity_scaling: 0.2
+      move_to_coke:
+        acceleration_scaling: 1
+        relative_orientation:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 1.0
+        relative_position:
+        - 0.0
+        - 0.0
+        - 0.0
+        skill_type: joint_move_to
+        target_frame: can_approach
+        velocity_scaling: 1
+      move_to_hole:
+        acceleration_scaling: 1
+        relative_orientation:
+        - 0.0
+        - 0.0
+        - 0.0
+        - 1.0
+        relative_position:
+        - 0.0
+        - 0.0
+        - 0.0
+        skill_type: joint_move_to
+        target_frame: hole_approach
+        velocity_scaling: 0.2

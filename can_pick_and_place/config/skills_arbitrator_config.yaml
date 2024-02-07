@@ -1,8 +1,9 @@
 skills_arbitrator:
   action_types_to_evaluate:
     pick_and_place:
-      failure: -1000000 
-      duration: -1000 
+      failure: -1000000000
+      final_distance: -1000000
+      duration: -1000
       max_force: -1 
 
   skill_types_to_evaluate:

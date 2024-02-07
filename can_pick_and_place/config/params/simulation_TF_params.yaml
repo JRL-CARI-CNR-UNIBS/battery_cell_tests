@@ -1,5 +1,6 @@
 tf_params:
   - {name: "can_approach" , frame: "can",            position: [0.01,      0.02,  0.20], quaternion: [0.0, 1.0, 0.0, 0.0]}
   - {name: "can_grasp"    , frame: "can",            position: [0.01,      0.02,   0.0], quaternion: [0.0, 1.0, 0.0, 0.0]}
-  - {name: "home"         , frame: "world",          position: [0.069, -1.320, 1.531],   quaternion: [1.0, 0.0, 0.0, 0.0]}
-  - {name: "hole_approach", frame: "table_can_hole", position: [-0.015,    0.015,  0.2],   quaternion: [1.0, 0.0, 0.0, 0.0]}
+  - {name: "home"         , frame: "world",          position: [0.069,   -1.320, 1.531], quaternion: [1.0, 0.0, 0.0, 0.0]}
+  - {name: "hole_approach", frame: "table_can_hole", position: [0.0,         0.0,  0.4], quaternion: [1.0, 0.0, 0.0, 0.0]}
+  - {name: "hole_insertion",frame: "table_can_hole", position: [-0.015,    0.015,  0.2], quaternion: [1.0, 0.0, 0.0, 0.0]}

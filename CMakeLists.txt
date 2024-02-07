@@ -17,7 +17,7 @@ find_package(catkin REQUIRED COMPONENTS
   manipulation_msgs
   actionlib_msgs
   actionlib
-  pybullet_utils
+  pybullet_simulation
   tf
 )
 
@@ -51,7 +51,7 @@ catkin_package(
                   skills_learning_msgs
                   skills_arbitrator_msgs
                   skills_util_msgs
-                  pybullet_utils
+                  pybullet_simulation
                   tf
 DEPENDS
 )

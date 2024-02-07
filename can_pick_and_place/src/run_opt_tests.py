@@ -21,7 +21,7 @@ import real_personal_class
 
 if __name__ == '__main__':
 
-    tests_type = 'simulation'
+    tests_type = rospy.get_param('tests_type')
 
     rospy.init_node('optimizer_tests', anonymous=True)
     rospy.set_param('/optimization_end', False)
@@ -49,7 +49,7 @@ if __name__ == '__main__':
     model_name.append('can')
     pose = []
     model_pose = Pose()
-    model_pose.position.x = 0.0
+    model_pose.position.x = -0.4
     model_pose.position.y = -1.3
     model_pose.position.z = 1.0
     model_pose.orientation.x = 0.0
@@ -66,7 +66,7 @@ if __name__ == '__main__':
 
     test_names = ['test_1']
 
-    iteration_number = 100
+    iteration_number = 200
 
     for test_name in test_names:
         rospy.set_param('RL_params', start_rl_params)

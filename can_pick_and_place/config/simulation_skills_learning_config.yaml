@@ -2,18 +2,18 @@ skills_learning:
   skill_types_to_optimize:
     joint_move_to:
       relative_position: [0.01, 0.01, 0.01]
-      relative_orientation: [0.0,0.0,0.0,0.0] 
+      # relative_orientation: [0.0,0.0,0.0,0.0] 
       acceleration_scaling: 0.1
       velocity_scaling: 0.1
 
     cartesian_position:
       position: [0.01,0.01,0.01]     # traslation to respect the three axes. Position and orientation are alternative to rotZdeg and others.
-      quaternion: [0.0,0.0,0.0,0.0]  # rotation to respect the three axes
+      # quaternion: [0.0,0.0,0.0,0.0]  # rotation to respect the three axes
       linear_velocity_m_s: 0.01
       angular_velocity_rad_s: 0.01
 
     simple_touch:
-      goal_twist: [0.001, 0.001, 0.005, 0, 0, 0]
+      goal_twist: [0.0, 0.0, 0.005, 0, 0, 0]
       target_force: 10 
 
     
